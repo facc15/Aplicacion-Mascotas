@@ -14,25 +14,18 @@ public class Perro extends Mascota
 		this.razaPerro=r;
 	}
 
-	public static String ObtenerPerro(Perro p)
+	public String ObtenerDatos()
 	{
 		StringBuilder sb=new StringBuilder();
 		
-		sb.append("Perro "+ p.tipoBusqueda.toString() +"\n");
-		sb.append("Nombre: " + p.nombre + " \n");
-		sb.append("Edad: " + p.edad + " \n");
+		sb.append("Perro ");
+		sb.append(super.ObtenerDatos());
 		
-		if(p.sexo=='H')
-		sb.append("Sexo: Hembra\n");
-		else if(p.sexo=='M')
-		sb.append("Sexo: Macho\n");	
-		
-		if(p.deRaza)
-			sb.append("Raza: " + p.razaPerro.toString() + "\n");
+		if(this.deRaza)
+			sb.append("\nRaza: " + this.razaPerro.toString() + "\n");
 		else
-			sb.append("No es de raza\n");
+			sb.append("\nNo es de raza\n");
 		
-		sb.append("Caracteristicas del perro: " + p.descripcion);
 		
 		return sb.toString();
 	}

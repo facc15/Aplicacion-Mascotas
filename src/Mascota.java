@@ -18,6 +18,23 @@ public abstract class Mascota
 		this.descripcion=descripcion;
 	}
 	
+	public String ObtenerDatos()
+	{
+		StringBuilder sb=new StringBuilder();
+		
+		sb.append(this.tipoBusqueda.toString());
+		sb.append("\nNombre: " + this.nombre);
+		sb.append("\nEdad: " + this.edad);
+		if(this.sexo=='M' || this.sexo=='m')
+			sb.append("\nSexo: Macho");
+		else
+			sb.append("\nSexo: Hembra");
+		
+		sb.append("\nCaracteristicas: " + this.descripcion);
+		
+		return sb.toString();
+	}
+	
 	
 	
 	

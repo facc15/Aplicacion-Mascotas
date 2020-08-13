@@ -1,6 +1,6 @@
 
 public enum ETipoBusqueda 
 {
-	Perdido, Encontrado, Transitado, Avistado
+	Perdido, Encontrado, Avistado, Adopcion
 
 }
