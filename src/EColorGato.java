@@ -1,6 +1,6 @@
 
 public enum EColorGato 
 {
-	Blanco, Negro, Tuxedo, Carey, Atigrado, Naranja, Gris, Otro
+	Blanco,Rubio ,Negro, Tuxedo, Carey, Atigrado, Naranja, Gris, Otro
 
 }
